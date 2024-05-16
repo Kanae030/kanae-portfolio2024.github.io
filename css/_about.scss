@@ -1,0 +1,18 @@
+#page-about {
+	.body_inner {
+		margin: 0 auto;
+		padding: 0 5%;
+		max-width: 1400px;
+	}
+}
+#page-about {
+	.coming-soon {
+		margin: 260px 0 340px 0;
+		font-family: $text_title;
+		font-weight: 400;
+		font-size:min(8vw,100px);
+		color: $text_black;
+		text-align: center;
+		line-height: 1em;
+	}
+}

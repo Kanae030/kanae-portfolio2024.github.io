@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Kanae's portfolio site</title>
+        <meta name="description" content="Digital designer Kanae's portfolio site.">
+        <meta name="keyword" content="portfolio,digital designer">
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Digital designer Kanae's portfolio site" />
+        <meta property="og:description" content="Digital designer Kanae's portfolio site." />
+        <meta property="og:site_name" content="Kanae's portfolio site" />
+        <meta property="og:image" content="" />
+        <link rel="icon" href="">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body id="page-top" id="home_link_js">
+        <div class="body_inner">
+            <header id="header">
+                <ul class="header_inner" id="g-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#work-list_anchor">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </header>
+            <section class="MV scroll-point" id="home">
+                <div class="wrapper_left">
+                    <div class="title">
+                        <h2>Digital</h2>
+                        <h2>Designer</h2>
+                    </div>
+                    <p class="text">Hi, I’m Kanae and a digital designer.<br>I mainly create<span class="text_orange"> web design</span>,<br>but also have experience of<br>creating <span class="text_orange">video design</span>, <br class="no_sp"><span class="text_orange">logos</span> and  <br class="no_pc"><span class="text_orange">shop sign design</span>.</p>
+                    <div class="fluid"></div>
+                </div>
+                <div class="wrapper_rigth">
+                    <div class="btn_about">
+                        <a href="aboutme.html">
+                            <img class="AboutMe" src="img/home/AboutMe.svg">
+                            <img class="arrow" src="img/home/arrow_orange.svg">
+                        </a>
+                    </div>
+                    <picture class="mv_img" id="project-list">
+                        <source media="(min-width: 577px)" srcset="img/home/mv_img_pc.png">
+                        <img src="img/home/mv_img_sp.png" alt="mv_img">
+                    </picture>
+                   
+                </div>
+            </section>
+            <section class="main scroll-point" id="work-list">
+                <a id="work-list_anchor" class="work-list_anchor"></a>
+                <div class="work-list">
+                    <ul class="tab_menu">
+                        <li class="tab_menu-item is-activated" data-tab="website">Website</li>
+                        <li class="tab_menu-item" data-tab="banner">Banner</li>
+                        <li class="tab_menu-item" data-tab="logo">Logo</li>
+                        <li class="tab_menu-item" data-tab="video">Video</li>
+                    </ul>
+                    <div class="tab_panel">
+                        <div class="tab_panel-box tab_panel-box-website is-shown" data-panel="website">
+                            <ul class="work-box">
+                                <li class="work-box-item">
+                                    <a href="work/website01.html">
+                                        <div class="work-box-image">
+                                            <img src="img/home/work/website01.jpg">
+                                        </div>
+                                        <div class="box-text">
+                                            <p class="company-name">Tera Technology</p>
+                                            <ul class="tag-role">
+                                                <li>UI design</li>
+                                                <li>fixed html / css / javascript</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="work-box-item">
+                                    <a href="work/website02.html">
+                                        <div class="work-box-image">
+                                            <img src="img/home/work/website02.jpg">
+                                        </div>
+                                        <div class="box-text">
+                                            <p class="company-name">EP Link</p>
+                                            <ul class="tag-role">
+                                                <li>UI design</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_panel-box tab_panel-box-banner" data-panel="banner">
+                            <ul class="work-box">
+                                <li class="work-box-item">
+                                    <a>
+                                        <div class="work-box-image">
+                                            <img src="img/home/work/banner01.jpg">
+                                        </div>
+                                        <div class="box-text">
+                                            <p class="company-name">Saizeriya</p>
+                                            <ul class="tag-role">
+                                                <li>design</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_panel-box tab_panel-box-logo" data-panel="logo">
+                            <ul class="work-box">
+                                <li class="work-box-item">
+                                    <a>
+                                        <div class="work-box-image">
+                                            <img src="img/home/work/logo01.jpg">
+                                        </div>
+                                        <div class="box-text">
+                                            <p class="company-name">ISSUE 100</p>
+                                            <ul class="tag-role">
+                                                <li>design</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_panel-box tab_panel-box-video" data-panel="video">
+                            <ul class="work-box">
+                                <li class="work-box-item">
+                                    <a>
+                                        <div class="work-box-image">
+                                            <img src="img/home/work/video01.jpg">
+                                        </div>
+                                        <div class="box-text">
+                                            <p class="company-name">Mynavi</p>
+                                            <ul class="tag-role">
+                                                <li>design</li>
+                                            </ul>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+            <footer>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/top.js"></script>
+    </body>
+</html>

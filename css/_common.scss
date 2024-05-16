@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: $text;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+a {
+    transition: .3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+input, textarea, select {
+    -webkit-appearance: none;
+    border: none;
+    box-shadow: none;
+    background: none;
+    font: inherit;
+    color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+header {
+    position: sticky;
+    top: 15px;
+    padding-top: 15px;
+    z-index: 102;
+
+    @include media(sm) {
+        padding-top: 0;
+        padding-top: 15px;
+    }
+    .header_inner {
+        display: flex;
+        justify-content: flex-end;
+        @include media(sm) {
+            justify-content: center;
+        }
+
+        li {
+            font-size: 24px;
+            padding-left: 40px;
+            color: $text_black;
+            @include media(md) {
+                padding-left: 30px;
+                font-size: 20px;
+            }
+
+            &:first-child {
+                padding-left: 0px;
+            }
+            a{  
+                &:hover {
+                        color: $main_orange;
+                    }
+                }
+        }
+        
+        .current-page, .position-now {
+            color: $main_orange;
+            &:before {
+                content: '';
+                display: inline-block;
+                position: relative;
+                top: -5px;
+                background: $main_orange;
+                margin-right: 6px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                @include media(md) {
+                    top: -5px;
+                    background: $main_orange;
+                    margin-right: 4px;
+                    width: 4px;
+                    height: 4px;
+                }
+            } 
+                
+        }
+
+    }
+    
+}
+header.change-color {
+    margin: 0 -40px 0 auto;
+    padding: 15px 40px;
+    width: fit-content;
+    background-color: #fff;
+    border-radius: 999px;
+
+    @include media(sm) {
+        margin: 0 auto;
+        padding: 15px 34px;
+    }
+}
+footer {
+    margin-top: 100px;
+    padding-bottom: 40px;
+    border-top: solid 1px #e8e8e8;
+    @include media(sm) {
+        margin-top: 60px;
+        padding-bottom: 20px;
+    }
+}
