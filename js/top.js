@@ -73,12 +73,12 @@ elemTop[i] =Math.round(parseInt($(this).offset().top-headerH));//追従するhea
 function ScrollAnime() {//スクロールした際のナビゲーションの関数にまとめる
 var scroll = Math.round($(window).scrollTop());
 var NavElem = $("#g-nav li");//ナビゲーションのliの何番目かを定義するための準備
-$("#g-nav li").removeClass('position-now');//全てのナビゲーションの現在地クラスを除去
+$("#g-nav li").removeClass('current-page');//全てのナビゲーションの現在地クラスを除去
 if(scroll >= 0 && scroll < elemTop[1]) {//スクロール値が0以上 .scroll-point 1つめ（area-1）の高さ未満
-$(NavElem[0]).addClass('position-now');//1つめのliに現在地クラスを付与
+$(NavElem[0]).addClass('current-page');//1つめのliに現在地クラスを付与
 }
 else if(scroll >= elemTop[1]) {//.scroll-point 1つめ（area-1）以上
-$(NavElem[1]).addClass('position-now');//2つめのliに現在地クラスを付与
+$(NavElem[1]).addClass('current-page');//2つめのliに現在地クラスを付与
 }
 }
 
