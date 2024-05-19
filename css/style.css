@@ -377,14 +377,22 @@ footer {
 #page-top .MV .wrapper_rigth .btn_about a .arrow {
   position: absolute;
   top: 42%;
-  left: 30%;
+  left: 32%;
   width: 10vw;
   max-width: 78px;
   -webkit-transition: 0.4s all;
   transition: 0.4s all;
 }
+@media screen and (max-width: 1024px) {
+  #page-top .MV .wrapper_rigth .btn_about a .arrow {
+    width: 6.4vw;
+    max-width: 68px;
+  }
+}
 @media screen and (max-width: 576px) {
   #page-top .MV .wrapper_rigth .btn_about a .arrow {
+    width: 10vw;
+    max-width: 78px;
     left: 33%;
   }
 }
