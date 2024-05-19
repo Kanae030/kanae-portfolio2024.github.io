@@ -188,7 +188,7 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 170px;
+  margin-top: 110px;
 }
 @media screen and (max-width: 1024px) {
   #page-top .MV {
