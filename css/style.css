@@ -255,7 +255,7 @@ footer {
   }
 }
 #page-top .MV .wrapper_left .title h2:last-child {
-  padding: 10px 0 0 95px;
+  padding-top: 10px;
 }
 @media screen and (max-width: 1024px) {
   #page-top .MV .wrapper_left .title h2:last-child {
