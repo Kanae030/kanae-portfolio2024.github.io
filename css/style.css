@@ -659,7 +659,7 @@ footer {
   }
 }
 #page-work .MV .MV_title {
-  margin-top: 25px;
+  margin-top: 10px;
   font-family: "Poppins";
   font-size: min(10vw, 80px);
   font-weight: 500;
@@ -767,7 +767,7 @@ footer {
 }
 #page-work .MV .fluid {
   position: absolute;
-  top: -28%;
+  top: -60%;
   left: -28%;
   width: 130vh;
   height: 100vh;
@@ -920,6 +920,7 @@ footer {
   }
 }
 #page-work .main .explanation-short {
+  position: relative;
   margin: 60px 0 140px 0;
 }
 @media screen and (max-width: 1024px) {
@@ -979,6 +980,31 @@ footer {
 }
 #page-work .main .explanation-short .work_img01 img {
   border-radius: 20px;
+}
+#page-work .main .explanation-short .fluid {
+  position: absolute;
+  bottom: -46%;
+  right: -30%;
+  width: 110vh;
+  height: 90vh;
+  max-width: 900px;
+  max-height: 400px;
+  background: radial-gradient(circle, rgba(255, 164, 0, 0.5), rgba(255, 164, 0, 0));
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  -webkit-animation: fluidrotate 4s ease 0s infinite, zoom-in-anim 10s infinite;
+          animation: fluidrotate 4s ease 0s infinite, zoom-in-anim 10s infinite;
+  z-index: -1;
+}
+@media screen and (max-width: 576px) {
+  #page-work .main .explanation-short .fluid {
+    top: -36%;
+    right: -26%;
+    width: 80vh;
+    height: 50vh;
+    max-width: 600px;
+    max-height: 400px;
+  }
 }
 #page-work .main .other-img {
   position: relative;
