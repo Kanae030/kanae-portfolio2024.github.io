@@ -44,8 +44,8 @@ table {
 
 .header_wrapper {
   margin: 0 auto;
-  width: 90%;
-  max-width: 1260px;
+  width: 88%;
+  max-width: 1176px;
 }
 @media screen and (max-width: 576px) {
   .header_wrapper {
@@ -54,9 +54,9 @@ table {
 }
 .header_wrapper header {
   position: fixed;
-  top: 30px;
-  width: 90%;
-  max-width: 1260px;
+  top: 20px;
+  width: 88%;
+  max-width: 1176px;
   z-index: 102;
 }
 @media screen and (max-width: 576px) {
@@ -121,9 +121,9 @@ table {
 }
 
 header.change-color {
-  top: 15px;
-  width: calc(90% + 40px);
-  max-width: 1300px;
+  top: 5px;
+  width: calc(88% + 40px);
+  max-width: 1216px;
 }
 @media screen and (max-width: 576px) {
   header.change-color {
@@ -188,11 +188,11 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 110px;
+  margin-top: 90px;
 }
 @media screen and (max-width: 1024px) {
   #page-top .MV {
-    margin-top: 90px;
+    margin-top: 70px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -206,11 +206,11 @@ footer {
 }
 #page-top .MV .wrapper_left {
   position: relative;
-  width: 40%;
+  width: 38%;
 }
 @media screen and (max-width: 1024px) {
   #page-top .MV .wrapper_left {
-    width: 45%;
+    width: 44.2%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -235,7 +235,7 @@ footer {
     margin-left: -5px;
   }
 }
-#page-top .MV .wrapper_left .title h2 {
+#page-top .MV .wrapper_left .title .title_cover h2 {
   padding-top: 20px;
   font-family: "Poppins";
   font-weight: 500;
@@ -244,26 +244,25 @@ footer {
   line-height: 1em;
 }
 @media screen and (max-width: 1024px) {
-  #page-top .MV .wrapper_left .title h2 {
+  #page-top .MV .wrapper_left .title .title_cover h2 {
     padding-top: 0px;
   }
 }
 @media screen and (max-width: 576px) {
-  #page-top .MV .wrapper_left .title h2 {
-    padding-top: 0px;
+  #page-top .MV .wrapper_left .title .title_cover h2 {
     font-size: min(16.4vw, 94px);
   }
 }
-#page-top .MV .wrapper_left .title h2:last-child {
+#page-top .MV .wrapper_left .title .title_cover .title02 {
   padding-top: 10px;
 }
 @media screen and (max-width: 576px) {
-  #page-top .MV .wrapper_left .title h2:last-child {
+  #page-top .MV .wrapper_left .title .title_cover .title02 {
     padding-left: 20%;
   }
 }
 #page-top .MV .wrapper_left .text {
-  margin-top: 15%;
+  margin-top: 10%;
   font-size: clamp(20px, 1.8vw, 25px);
   line-height: 1.9em;
   position: relative;
@@ -308,12 +307,12 @@ footer {
 }
 #page-top .MV .wrapper_rigth {
   position: relative;
-  width: 60%;
+  width: 62%;
   z-index: 100;
 }
 @media screen and (max-width: 1024px) {
   #page-top .MV .wrapper_rigth {
-    width: 55%;
+    width: 55.8%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -790,6 +789,11 @@ footer {
 #page-work .main {
   padding-top: 60px;
 }
+@media screen and (max-width: 1024px) {
+  #page-work .main {
+    padding-top: 40px;
+  }
+}
 @media screen and (max-width: 576px) {
   #page-work .main {
     padding-top: 25px;
@@ -806,6 +810,11 @@ footer {
 }
 #page-work .main .explanation {
   margin: 120px 0 100px 0;
+}
+@media screen and (max-width: 1024px) {
+  #page-work .main .explanation {
+    margin: 80px 0 60px 0;
+  }
 }
 @media screen and (max-width: 576px) {
   #page-work .main .explanation {
@@ -829,7 +838,7 @@ footer {
   }
 }
 #page-work .main .explanation .visual-design {
-  padding-top: 70px;
+  padding-top: 100px;
 }
 @media screen and (max-width: 1024px) {
   #page-work .main .explanation .visual-design {
@@ -847,7 +856,7 @@ footer {
 #page-work .main .explanation .text {
   position: relative;
   width: 50%;
-  font-size: 16px;
+  font-size: 17px;
   color: #000;
   line-height: 2em;
 }
@@ -857,7 +866,7 @@ footer {
   }
 }
 #page-work .main .explanation .text h3 {
-  padding-bottom: 40px;
+  padding-bottom: 35px;
   font-size: 42px;
 }
 @media screen and (max-width: 1024px) {
@@ -897,13 +906,79 @@ footer {
   }
 }
 #page-work .main .explanation .work_img01, #page-work .main .explanation .work_img02 {
-  width: 44%;
+  width: 45%;
 }
 @media screen and (max-width: 1024px) {
   #page-work .main .explanation .work_img01, #page-work .main .explanation .work_img02 {
-    padding-top: 25px;
     width: 100%;
+    padding-top: 40px;
   }
+}
+@media screen and (max-width: 576px) {
+  #page-work .main .explanation .work_img01, #page-work .main .explanation .work_img02 {
+    padding-top: 25px;
+  }
+}
+#page-work .main .explanation-short {
+  margin: 60px 0 140px 0;
+}
+@media screen and (max-width: 1024px) {
+  #page-work .main .explanation-short {
+    margin: 0 0 100px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #page-work .main .explanation-short {
+    margin: 0 0 50px 0;
+  }
+}
+#page-work .main .explanation-short .visual-design {
+  padding-top: 0;
+}
+@media screen and (max-width: 1024px) {
+  #page-work .main .explanation-short .visual-design {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px) {
+  #page-work .main .explanation-short .visual-design {
+    padding-top: 0;
+  }
+}
+#page-work .main .explanation-short .text {
+  width: 47%;
+}
+@media screen and (max-width: 1024px) {
+  #page-work .main .explanation-short .text {
+    width: 100%;
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #page-work .main .explanation-short .text {
+    margin-top: 40px;
+  }
+}
+#page-work .main .explanation-short .work_img01 {
+  width: 48%;
+}
+@media screen and (max-width: 1024px) {
+  #page-work .main .explanation-short .work_img01 {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #page-work .main .explanation-short .work_img01 {
+    width: 100%;
+    padding-top: 0;
+  }
+}
+#page-work .main .explanation-short .work_img01 img {
+  border-radius: 20px;
 }
 #page-work .main .other-img {
   position: relative;
@@ -913,7 +988,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
 }
 @media screen and (max-width: 1024px) {
   #page-work .main .other-img {
@@ -969,11 +1044,6 @@ footer {
   margin: 0 auto;
   width: 90%;
   max-width: 1260px;
-}
-@media screen and (max-width: 576px) {
-  .next-project .next-project_inner {
-    padding-left: 5%;
-  }
 }
 .next-project .next-project_inner .title {
   display: -webkit-box;
