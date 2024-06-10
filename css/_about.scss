@@ -14,5 +14,9 @@
 		color: $text_black;
 		text-align: center;
 		line-height: 1em;
+		@include media(sm) {
+			margin: 240px 0 300px 0;
+			font-size:min(11vw,50px);
+		}
 	}
 }

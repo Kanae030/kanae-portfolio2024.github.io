@@ -796,7 +796,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   #page-work .main {
-    padding-top: 25px;
+    padding-top: 15px;
   }
 }
 #page-work .main .main-img {
@@ -818,7 +818,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   #page-work .main .explanation {
-    margin: 40px 0 60px 0;
+    margin: 30px 0 30px 0;
   }
 }
 #page-work .main .explanation .project, #page-work .main .explanation .visual-design {
@@ -850,7 +850,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   #page-work .main .explanation .visual-design {
-    padding-top: 50px;
+    padding-top: 30px;
   }
 }
 #page-work .main .explanation .text {
@@ -916,12 +916,12 @@ footer {
 }
 @media screen and (max-width: 576px) {
   #page-work .main .explanation .work_img01, #page-work .main .explanation .work_img02 {
-    padding-top: 25px;
+    padding-top: 15px;
   }
 }
 #page-work .main .explanation-short {
   position: relative;
-  margin: 60px 0 140px 0;
+  margin: 30px 0 140px 0;
 }
 @media screen and (max-width: 1024px) {
   #page-work .main .explanation-short {
@@ -1006,6 +1006,14 @@ footer {
     max-height: 350px;
   }
 }
+#page-work .main .video_explanation-short {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 1024px) {
+  #page-work .main .video_explanation-short {
+    margin-bottom: 30px;
+  }
+}
 #page-work .main .other-img {
   position: relative;
   display: -webkit-box;
@@ -1056,6 +1064,14 @@ footer {
   -webkit-animation: fluidrotate 4s ease 0s infinite, zoom-in-anim 10s infinite;
           animation: fluidrotate 4s ease 0s infinite, zoom-in-anim 10s infinite;
   z-index: -1;
+}
+#page-work .main .video_other-img img {
+  border-radius: 20px;
+}
+@media screen and (max-width: 576px) {
+  #page-work .main .video_other-img img {
+    border-radius: 20px;
+  }
 }
 
 .next-project {

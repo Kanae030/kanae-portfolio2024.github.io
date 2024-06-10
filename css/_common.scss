@@ -37,79 +37,99 @@ input, textarea, select {
 table {
     border-collapse: collapse;
 }
-
-header {
-    position: sticky;
-    top: 15px;
-    padding-top: 15px;
-    z-index: 102;
-
+.header_wrapper {
+    margin: 0 auto;
+    width: 88%;
+    max-width: 1176px;
     @include media(sm) {
-        padding-top: 0;
-        padding-top: 15px;
+        width: 100%;
+    }
+    header {
+        position: fixed;
+        top: 20px;
+        width: 88%; 
+        max-width: 1176px;
+        z-index: 102;
+
+        @include media(sm) {
+            top: 20px;
+            width: 100%;
+        }
+        .header_inner {
+            display: flex;
+            justify-content: flex-end;
+            @include media(sm) {
+                justify-content: center;
+            }
+
+            li {
+                font-size: 24px;
+                padding-right: 40px;
+                color: $text_black;
+                @include media(md) {
+                    font-size: 20px;
+                }
+                &:last-child {
+                    padding-right: 0px;
+                }
+                a{  
+                    &:hover {
+                            color: $main_orange;
+                        }
+                    }
+            }
+            
+            .current-page {
+                position: relative;
+                color: $main_orange;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 14px;
+                    left: -11px;
+                    display: inline-block;
+                    background: $main_orange;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    @include media(md) {
+                        top: 12px;
+                        width: 4px;
+                        height: 4px;
+                        background: $main_orange;
+                    }
+                } 
+                    
+            }
+
+        }
+        
+    }
+}
+header.change-color {
+    top: 5px;
+    width: calc(88% + 40px);
+    max-width: calc(1176px + 40px);
+    @include media(sm) {
+        top: 5px;
+        width: 90%;
+        margin: 0 5%;
     }
     .header_inner {
         display: flex;
         justify-content: flex-end;
+        width: fit-content;
+        margin-left: auto;
+        padding: 15px 40px;
+        background-color: #fff;
+        border-radius: 999px;
+
         @include media(sm) {
             justify-content: center;
+            margin: 0 auto;
+            padding: 15px 12%;
+            width: fit-content;
         }
-
-        li {
-            font-size: 24px;
-            padding-left: 40px;
-            color: $text_black;
-            @include media(md) {
-                padding-left: 30px;
-                font-size: 20px;
-            }
-
-            &:first-child {
-                padding-left: 0px;
-            }
-            a{  
-                &:hover {
-                        color: $main_orange;
-                    }
-                }
-        }
-        
-        .current-page, .position-now {
-            color: $main_orange;
-            &:before {
-                content: '';
-                display: inline-block;
-                position: relative;
-                top: -5px;
-                background: $main_orange;
-                margin-right: 6px;
-                width: 6px;
-                height: 6px;
-                border-radius: 50%;
-                @include media(md) {
-                    top: -5px;
-                    background: $main_orange;
-                    margin-right: 4px;
-                    width: 4px;
-                    height: 4px;
-                }
-            } 
-                
-        }
-
-    }
-    
-}
-header.change-color {
-    margin: 0 -40px 0 auto;
-    padding: 15px 40px;
-    width: fit-content;
-    background-color: #fff;
-    border-radius: 999px;
-
-    @include media(sm) {
-        margin: 0 auto;
-        padding: 15px 34px;
     }
 }
 footer {
@@ -117,7 +137,7 @@ footer {
     padding-bottom: 40px;
     border-top: solid 1px #e8e8e8;
     @include media(sm) {
-        margin-top: 60px;
+        margin-top: 30px;
         padding-bottom: 20px;
     }
 }

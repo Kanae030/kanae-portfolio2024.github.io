@@ -1,43 +1,58 @@
 #page-work {
-	overflow-x: hidden;
+	.overflow-hidden {
+		overflow-x: hidden;
+	}
+	
+
 	.body_inner {
 		margin: 0 auto;
-		padding: 0 5%;
-		max-width: 1400px;
+		width: 90%;
+		max-width: 1260px;
 	}
 }
 #page-work .MV {
 	position: relative;
-	padding-top: 130px;
+	margin-top: 130px;
 	@include media(sm) {
-		padding-top: 45px;
+		margin-top: 90px;
 	}
 	.company {
 		display: flex;
+		flex-wrap: wrap;
 		font-size: 22px;
 		color: $main_orange;
 		z-index: 100;
 		@include media(sm) {
-			font-size: 18px;
+			font-size: 16px;
 		}
 		.name {
-			&:after {
-				content: "";
-				position: relative;
-				top: -8px;
-				display: inline-block;
-				margin-left: 15px;
-				width: 20px;
-				height: 1px;
-				background-color: $main_orange;
+			left: 0;
+			@include media(sm) {
+				width: auto;
+			}
+		}
+		.line {
+			position: relative;
+			top: 15px;
+			left: 14px;
+			display: inline-block;
+			width: 20px;
+			height: 1px;
+			background-color: $main_orange;
+			@include media(sm) {
+				top: 12px;
+				left: 10px;
 			}
 		}
 		.industry {
-			padding-left: 15px;
+			margin-left: 30px;
+			@include media(sm) {
+				margin-left: 20px;
+			}
 		}
 	}
 	.MV_title {
-		margin-top: 25px;
+		margin-top: 10px;
 		font-family: $text_title;
 		font-size:min(10vw,80px);
 		font-weight: 500;
@@ -45,7 +60,7 @@
 		line-height: 1.2em;
 		z-index: 100;
 		@include media(sm) {
-			margin-top: 15px;
+			margin-top: 6px;
 		}
 	}
 	.MV_bottom {
@@ -56,7 +71,7 @@
 		border-bottom: solid 1px #cdcdcd;
 		z-index: 100;
 		@include media(sm) {
-			padding: 40px 0 20px 0;
+			padding: 30px 0 20px 0;
 			flex-direction: column;
 			align-items: stretch;
 		}
@@ -122,7 +137,7 @@
 	}
 	.fluid {
 		position: absolute;
-		top: -28%;
+		top: -60%;
 		left: -28%;
 		width: 130vh;
 		height: 100vh;
@@ -133,14 +148,17 @@
 		animation: fluidrotate 4s ease 0s infinite, zoom-in-anim 10s infinite;
 		z-index: -1;
 		@include media(sm) {
-			top: -38%;
+			top: -90%;
 		}
 	}
 }
 #page-work .main {
 	padding-top: 60px;
+	@include media(md) {
+		padding-top: 40px;
+	}
 	@include media(sm) {
-		padding-top: 25px;
+		padding-top: 15px;
 	}
 	.main-img {
 		border: solid 1px #f1f1f1;
@@ -151,8 +169,11 @@
 	}
 	.explanation {
 		margin: 120px 0 100px 0;
+		@include media(md) {
+			margin: 80px 0 60px 0;
+		}
 		@include media(sm) {
-			margin: 40px 0 40px 0;
+			margin: 30px 0 30px 0;
 		}
 		.project, .visual-design {
 			display: flex;
@@ -164,32 +185,32 @@
 		    }
 		}
 		.visual-design {
-			padding-top: 70px;
+			padding-top: 100px;
 			@include media(md) {
 				flex-direction:  column-reverse;
 			}
 			@include media(sm) {
-				padding-top: 40px;
+				padding-top: 30px;
 			}
 		}
 		.text {
 			position: relative;
 			width: 50%;
-			font-size: 16px;
+			font-size: 17px;
 			color: $text_black;
 			line-height: 2em;
 			@include media(md) {
 				width: 100%;
 			}
 			h3 {
-				padding-bottom: 40px;
+				padding-bottom: 35px;
 				font-size: 42px;
 				@include media(md) {
 					padding-bottom: 25px;
 				}
 				@include media(sm) {
 					font-size: 28px;
-					padding-bottom: 15px;
+					padding-bottom: 10px;
 				}
 			}
 			.fluid {
@@ -215,25 +236,98 @@
 			}
 		}
 		.work_img01, .work_img02 {
-			width: 44%;
+			width: 45%;
 			@include media(md) {
-				padding-top: 25px;
 				width: 100%;
+				padding-top: 40px;
+			}
+			@include media(sm) {
+				padding-top: 15px;
 			}
 		}
 
+	}
+	.explanation-short {
+		position: relative;
+		margin: 30px 0 140px 0;
+		@include media(md) {
+			margin: 0 0 100px 0;
+		}
+		@include media(sm) {
+			margin: 0 0 50px 0;
+		}
+		.visual-design {
+			padding-top: 0;
+			@include media(md) {
+				flex-direction: column;
+			}
+			@include media(sm) {
+				padding-top: 0;
+			}
+		}
+		.text {
+			width: 47%;
+			@include media(md) {
+				width: 100%;
+				margin-top: 80px;
+			}
+			@include media(sm) {
+				margin-top: 30px;
+			}
+		}
+		.work_img01 {
+			width: 48%;
+			@include media(md) {
+				width: 100%;
+				padding-top: 0;
+			}
+			@include media(sm) {
+				width: 100%;
+				padding-top: 0;
+			}
+			img {
+				border-radius: 20px;
+			}
+		}
+		.fluid {
+			position: absolute;
+			bottom: -44%;
+			right: -30%;
+			width: 110vh;
+			height: 90vh;
+			max-width: 900px;
+			max-height: 400px;
+			background: radial-gradient(circle, rgba(255,164,0,50%), rgba(255,164,0,0%));
+			filter: blur(50px);
+			animation: fluidrotate 4s ease 0s infinite, zoom-in-anim 10s infinite;
+			z-index: -1;
+			@include media(sm) {
+				bottom: -4%;
+				right: -68%;
+				width: 75vh;
+				height: 45vh;
+				max-width: 550px;
+				max-height: 350px;
+			}
+		}
+	}
+	.video_explanation-short {
+		margin-bottom: 100px;
+		@include media(md) {
+			margin-bottom: 30px;
+		}
 	}
 	.other-img {
 		position: relative;
 		display: flex;
 		justify-content: space-between;
-		margin-bottom: 120px;
+		margin-bottom: 140px;
 		@include media(md) {
 			margin-bottom: 100px;
 		}
 		@include media(sm) {
 			flex-direction: column;
-			margin-bottom: 50px;
+			margin-bottom: 30px;
 		}
 		img {
 			width: 48%;
@@ -242,11 +336,7 @@
 			@include media(sm) {
 				width: 100%;
 				border-radius: 18px;
-			}
-			&:last-child {
-				@include media(sm) {
-					margin-top: 20px;
-				}
+				margin-bottom: 20px;
 			}
 		}
 		.fluid {
@@ -263,6 +353,14 @@
 			z-index: -1;
 		}
 	}
+	.video_other-img {
+		img {
+			border-radius: 20px;
+			@include media(sm) {
+				border-radius: 20px;
+			}
+		}
+	}
 }
 .next-project {
 	position: relative;
@@ -271,17 +369,17 @@
 	}
 	.next-project_inner {
 		margin: 0 auto;
-		padding: 0 5%;
-		max-width: 1400px;
-		@include media(sm) {
-			padding-left: 5%;
-		}
+		width: 90%;
+		max-width: 1260px;
+		// @include media(sm) {
+		// 	padding-left: 5%;
+		// }
 		.title {
 			display: flex;
 			align-items: center;
 			margin-bottom: 40px;
 			@include media(sm) {
-				margin-bottom: 20px;
+				margin-bottom: 15px;
 			}
 			h3 {
 				font-size: 42px;
@@ -348,7 +446,7 @@
 			color: $text_black;
 			text-align: center;
 			@include media(sm) {
-				margin-top: 25px;
+				margin-top: 30px;
 				font-size: 18px;
 			}
 			a {
@@ -369,7 +467,7 @@
 	  				vertical-align: middle;
 	  				transition: all .4s ease;
 	  				@include media(sm) {
-						top: 6	px;
+						top: 6px;
 						width: 40px;
 						height: 9px;
 					}

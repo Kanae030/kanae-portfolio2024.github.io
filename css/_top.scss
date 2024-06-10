@@ -1,33 +1,33 @@
 #page-top {
-	overflow-x: hidden;
 	.body_inner {
 		margin: 0 auto;
-		padding: 0 8%;
-		max-width: 1400px;
+		width: 88%;
+		max-width: 1176px;
 		@include media(sm) {
+			width: 100%;
 			padding: 0 5%;;
 	    }
 	}
 }
 #page-top .MV {
 	display: flex;
-	margin-top: 70px;
+	margin-top: 90px;
 
 	@include media(md) {
-		margin-top: 40px;
+		margin-top: 70px;
     }
     @include media(sm) {
 		flex-direction: column;
-		margin-top: 50px;
+		margin-top: 90px;
     }
 
 
 	.wrapper_left {
 		position: relative;
-		width: 40%;
+		width: 38%;
 
 		@include media(md) {
-			width: 45%;
+			width: 44.2%;
 	    }
 	    @include media(sm) {
 			width: 100%;
@@ -38,36 +38,49 @@
 			flex-direction: column;
 			margin-left: -10px;
 			position: relative;
+			// width: fit-content;
+			// height: 25.7vw;
 			z-index: 101;
 			@include media(sm) {
 				margin-left: -5px;
 		    }
-			h2{
-				padding-top: 20px;
-				font-family: $text_title;
-				font-weight: 500;
-				font-size:min(10vw,140px);
-				color: $text_black;
-				line-height: 1em;
-
-				@include media(md) {
-					padding-top: 0px;
-			    }
-			    @include media(sm) {
-					padding-top: 0px;
-					font-size:min(16.4vw, 94px);
-			    }
-
-				&:last-child {
-					padding: 10px 0 0 95px;
+		    .title_cover {
+		  //   	height: 100%;
+				// overflow: hidden;
+				h2{
+					padding-top: 20px;
+					font-family: $text_title;
+					font-weight: 500;
+					font-size:min(10vw,140px);
+					color: $text_black;
+					line-height: 1em;
+					// transform: translateY(100%);
+	  		// 		transition: 1s;
 					@include media(md) {
+						padding-top: 0px;
+				    }
+				    @include media(sm) {
+						font-size:min(16.4vw, 94px);
+				    }
+				}
+				.title02 {
+					padding-top: 10px;
+					@include media(sm) {
 						padding-left: 20%;
 				    }
 				}
-			}
+		    }
 		}
+		// .title.animate {
+		// 	.title01 {
+		//     	transform: translate(0);
+		//     }
+		// 	.title02 {
+		// 		transform: translate(0);
+		// 	}
+		// }
 		.text {
-			margin-top: 15%;
+			margin-top: 10%;
 			font-size: clamp(20px, 1.8vw, 25px);
 			line-height: 1.9em;
 			position: relative;
@@ -77,8 +90,8 @@
 				font-size: clamp(13px, 2vw, 25px);
 		    }
 			@include media(sm) {
-				margin-top: 3%;
-				font-size: clamp(12px, 3.1vw, 18px);
+				margin-top: 4%;
+				font-size: clamp(15px, 3.1vw, 18px);
 		    }
 			.text_orange {
 				color: $main_orange;
@@ -106,11 +119,11 @@
 	}
 	.wrapper_rigth {
 		position: relative;
-		width: 60%;
+		width: 62%;
 		z-index: 100;
 
 		@include media(md) {
-			width: 55%;
+			width: 55.8%;
 	    }
 	    @include media(sm) {
 			width: 100%;
@@ -138,8 +151,8 @@
 				max-height: 210px;
 				border-radius: 50%;
 				@include media(sm) {
-					width: 24vw;
-					height: 24vw;
+					width: 28vw;
+					height: 28vw;
 			    }
 				.AboutMe{
 					position: absolute;
@@ -151,21 +164,27 @@
 					max-height: 180px;
 					animation: rotate 15s linear infinite;
 					@include media(sm) {
-						top: 11%;
-						left: 11%;
-						width: 18vw;
-						height: 18vw;
+						top: 8.6%;
+						left: 9%;
+						width: 23vw;
+						height: 23vw;
 				    }
 				}
 				.arrow{
 					position: absolute;
 					top: 42%;
 					left: 32%;
-					width: 5.4vw;
+					width: 10vw;
 					max-width: 78px;
 					transition: .4s all;
+						@include media(md) {
+							width: 6.4vw;
+							max-width: 68px;
+					    }
 					@include media(sm) {
-						left: 36%;
+						width: 10vw;
+						max-width: 78px;
+						left: 33%;
 					}
 				}
 				&:hover img{
