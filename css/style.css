@@ -1205,7 +1205,7 @@ footer {
 @media screen and (max-width: 576px) {
   .next-project .next-project_inner .btn_project-list {
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 .next-project .next-project_inner .btn_project-list a {
