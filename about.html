@@ -16,19 +16,94 @@
         <link rel="stylesheet" type="text/css" href="css/style.css">
     </head>
     <body id="page-about">
-        <div class="header_wrapper">
-            <header>
-                <ul class="header_inner">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#work-list_anchor">Work</a></li>
-                    <!-- <li class="current-page"><a href="about.html">About</a></li> -->
-                </ul>
-            </header>
-        <div class="header_wrapper">
-        <div class="body_inner">
-            <h2 class="coming-soon">Coming soon...</h2>
-            <footer>
-            </footer>
+        <div class="overflow-hidden">
+            <div class="header_wrapper">
+                <header  id="header">
+                    <ul class="header_inner">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#work-list_anchor">Work</a></li>
+                        <li class="current-page"><a href="about.html">About</a></li>
+                    </ul>
+                </header>
+            </div>
+            <div class="body_inner">
+                <section class="MV scroll-point">
+                    <div class="wrapper_left">
+                        <div class="title">
+                            <div class="title_cover">
+                                <h2 class="title01">About</h2>
+                            </div>
+                            <div class="title_cover">
+                                <h2 class="title02">Me</h2>
+                            </div>
+                        </div>
+                        <p class="text">My journey started when I was a university student. I became interested in web design and began teaching myself design and HTML/CSS. After university, I started working as a junior web designer at a company in Tokyo.<br>I feel joy when I'm coming up with ideas and designs and when I'm collaborating with my team to improve our work. I’m excited to join your team and bring awesome creations to life together.</p>
+                        <div class="fluid"></div>
+                    </div>
+                    <div class="wrapper_rigth">
+                        <picture class="mv_img" id="project-list">
+                            <source media="(min-width: 577px)" srcset="img/about/l_mv_pc.png">
+                            <img src="img/about/l_mv_sp.png" alt="mv_img">
+                        </picture>
+                       
+                    </div>
+                </section>
+                <section class="main">
+                    <div class="experience contents">
+                        <h3 class="contents-title">Experience</h3>
+                        <ul class="content_margin">
+                            <li class="column_wrapper">
+                                <div class="left_title">
+                                    <h4 class="title">Junior Web Designer</h4>
+                                    <p class="company-name">Funny pro (Tokyo)</p>
+                                </div>
+                                <div class="right_date">
+                                    <p>April. 2020 - Feburary. 2024</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="project contents">
+                        <h3 class="contents-title">Project</h3>
+                        <ul class="content_margin">
+                            <li class="column_wrapper">
+                                <div class="left_title">
+                                    <h4 class="title">Designed Shop signboard</h4>
+                                    <p class="company-name">Takeout Pao</p>
+                                </div>
+                                <div class="right_date">
+                                    <p class="date_from">November. 2023</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="skill contents">
+                        <h3 class="contents-title">Skill</h3>
+                        <ul class="skill_item_wrapper content_margin">
+                            <li class="skill_item">Adobe Photoshop<span class="skill_detail">4yrs</span></li>
+                            <li class="skill_item"> Adobe Illustrator<span class="skill_detail">4yrs</span></li>
+                            <li class="skill_item">  Adobe Xd<span class="skill_detail">2yrs</span></li>
+                            <li class="skill_item">  HTML / CSS<span class="skill_detail">4yrs</span></li>
+                            <li class="skill_item">  Sass<span class="skill_detail">2yrs</span></li>
+                            <li class="skill_item">  Javascript<span class="skill_detail">1.5yrs</span></li>
+                            <li class="skill_item">  JQuery<span class="skill_detail">1.5yrs</span></li>
+                        </ul>
+                    </div>
+                    <div class="language contents">
+                        <h3 class="contents-title">Language</h3>
+                        <ul class="skill_item_wrapper content_margin">
+                            <li class="skill_item">Japanese<span class="skill_detail">native</span></li>
+                            <li class="skill_item">English<span class="skill_detail">intermediate</span></li>
+                            <li class="skill_item">Polish<span class="skill_detail">basic</span></li>
+                        </ul>
+                        <div class="fluid"></div>
+                    </div>
+                </section>
+                <footer>
+                </footer>
+            </div>
         </div>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="js/top.js"></script>
     </body>
 </html>
