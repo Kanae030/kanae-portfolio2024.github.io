@@ -414,7 +414,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   #page-top .MV .text {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: clamp(16px, 3.1vw, 18px);
   }
 }
@@ -741,7 +741,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   #page-work .MV .MV_bottom .myrole .role {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 #page-work .MV .MV_bottom .btn_visit {
@@ -894,7 +894,7 @@ footer {
 }
 @media screen and (max-width: 576px) {
   #page-work .main .explanation .text {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 #page-work .main .explanation .text h3 {
@@ -1354,7 +1354,7 @@ footer {
 @media screen and (max-width: 576px) {
   #page-about .MV .wrapper_left .text {
     margin-top: 10px;
-    font-size: clamp(14px, 3.1vw, 18px);
+    font-size: clamp(16px, 3.1vw, 18px);
   }
 }
 #page-about .MV .wrapper_left .text .text_orange {
