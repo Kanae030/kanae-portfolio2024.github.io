@@ -138,7 +138,7 @@
     content: "";
     display: inline-block;
     position: absolute;
-    top: calc(50% - .5vw);
+    top: calc(50% - .4vw);
     width: 2.1vw;
     height: .48vw;
     background-image: url("../img/work/arrow_black.svg");
