@@ -143,6 +143,7 @@
     height: .48vw;
     background-image: url("../img/work/arrow_black.svg");
     background-size: contain;
+    background-repeat: no-repeat;
     vertical-align: middle;
     transition: all .4s ease;
 }
@@ -175,8 +176,8 @@
     }
     #page-work .slick-prev::before, #page-work .slick-next::before {
         top: 44%;
-        width: 2.4vw;
-        height: .62vw;
+        width: 2.6vw;
+        height: .6vw;
     }   
     #page-work .slick-prev::before {
         left: calc(50% - 1.2vw);
