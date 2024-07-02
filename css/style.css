@@ -533,11 +533,15 @@ footer {
 #page-top .main .work-list .tab_panel .work-box .work-box-item {
   position: relative;
   width: 49%;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+#page-top .main .work-list .tab_panel .work-box .work-box-item:last-child {
+  margin-bottom: 0;
 }
 @media screen and (max-width: 576px) {
   #page-top .main .work-list .tab_panel .work-box .work-box-item {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 #page-top .main .work-list .tab_panel .work-box .work-box-item .work-box-image {
