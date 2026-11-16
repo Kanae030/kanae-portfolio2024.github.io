@@ -8,7 +8,7 @@ async function checkAuth() {
     return;
   }
 
-  const password = prompt("Enter password:");
+  const password = prompt("Enter password::");
   if (!password) {
     location.href = "https://google.com";
     return;
